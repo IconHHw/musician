@@ -1,0 +1,19 @@
+# ---------- 构建产物 ----------
+bin/
+obj/
+
+# ---------- 渲染产物 ----------
+# WAV / MIDI 都可以由 songs/*.json 随时重新生成，不入库
+out/
+
+# ---------- 音色库 ----------
+# FluidR3_GM.sf2 约 140MB。下载与放置方法见 CLAUDE.md 第 10 节
+assets/soundfonts/*.sf2
+assets/soundfonts/*.SF2
+.staging/
+
+# ---------- Claude Code 本地设置 ----------
+# 属于个人偏好，不共享
+.claude/settings.local.json
+
+# 注意：songs/*.json 是创作产物，**应当入库**

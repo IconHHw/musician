@@ -1,0 +1,11 @@
+# 文本文件在仓库和工作区**统一用 LF**，不随平台变化。
+# 这样同一个提交在任何机器上 checkout 出来的字节完全一致，也不会出现
+# "LF will be replaced by CRLF" 这类换行符警告。
+# 二进制文件本来就不入库（见 .gitignore）。
+* text=auto eol=lf
+
+# 例外：批处理文件**必须**是 CRLF。
+# cmd.exe 按行解析 .cmd，遇到 LF 行尾会把命令切错 —— 表现为一堆
+# "'DK' 不是内部或外部命令" 之类的诡异报错，很难联想到是行尾问题。
+*.cmd text eol=crlf
+*.bat text eol=crlf

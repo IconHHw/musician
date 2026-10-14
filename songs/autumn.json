@@ -1,0 +1,68 @@
+{
+  "title": "秋日私语",
+  "tempo": 76,
+  "key": "D minor",
+  "timeSignature": "4/4",
+
+  "material": {
+    "A": {
+      "chords": ["Dm", "Bb", "F", "C"],
+      "motif": "D5/q F5/e E5/e D5/h | F5/h D5/h | C5/q D5/q E5/h | E5/q C5/q D5/h"
+    },
+    "B": {
+      "chords": ["Gm", "A7", "Dm", "Dm"],
+      "motif": "D5/q G5/e F5/e G5/h | E5/q A5/q E5/h | F5/q E5/q D5/h | D5/h r/h"
+    }
+  },
+
+  "form": [
+    {
+      "section": "intro",
+      "bars": 4,
+      "material": "A",
+      "violin": "rest",
+      "piano": "sustain-pad",
+      "develop": []
+    },
+    {
+      "section": "theme1",
+      "bars": 4,
+      "material": "A",
+      "violin": "motif",
+      "piano": "broken-8th",
+      "develop": []
+    },
+    {
+      "section": "theme1b",
+      "bars": 4,
+      "material": "A",
+      "violin": "motif",
+      "piano": "broken-8th",
+      "develop": ["sequence+2"]
+    },
+    {
+      "section": "theme2",
+      "bars": 4,
+      "material": "B",
+      "violin": "motif",
+      "piano": "alberti",
+      "develop": ["ornament"]
+    },
+    {
+      "section": "climax",
+      "bars": 4,
+      "material": "A",
+      "violin": "motif",
+      "piano": "arpeggio-up",
+      "develop": ["octave+1"]
+    },
+    {
+      "section": "coda",
+      "bars": 4,
+      "material": "A",
+      "violin": "rest",
+      "piano": "sustain-pad",
+      "develop": []
+    }
+  ]
+}

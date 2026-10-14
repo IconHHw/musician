@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Musician.Audio/Musician.Audio.csproj" />
+    <Project Path="src/Musician.Cli/Musician.Cli.csproj" />
+    <Project Path="src/Musician.Core/Musician.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Musician.Core.Tests/Musician.Core.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,30 @@
+{
+  "title": "晨光",
+  "tempo": 104,
+  "key": "D major",
+  "timeSignature": "4/4",
+
+  "material": {
+    "A": {
+      "chords": ["D", "Bm", "G", "A"],
+      "motif": "A5/h F#5/q D5/q | F#5/h D5/q B4/q | G5/h D5/q B4/q | C#5/q E5/q A5/h"
+    },
+    "B": {
+      "chords": ["Em", "A7", "D", "G"],
+      "motif": "E5/q. G5/e B5/h | A5/q. C#6/e A5/h | D6/q A5/q F#5/q D5/q | G5/q. A5/e B5/h"
+    },
+    "End": {
+      "chords": ["D", "G", "A", "D"],
+      "motif": "D5/h F#5/q A5/q | B5/h G5/q D5/q | C#5/h E5/q A5/q | D5/w"
+    }
+  },
+
+  "form": [
+    { "section": "intro",   "bars": 4, "material": "A", "violin": "rest",  "piano": "sustain-pad", "develop": [] },
+    { "section": "theme1",  "bars": 4, "material": "A", "violin": "motif", "piano": "broken-8th",  "develop": [] },
+    { "section": "theme1b", "bars": 4, "material": "A", "violin": "motif", "piano": "broken-8th",  "develop": ["invert"] },
+    { "section": "theme2",  "bars": 4, "material": "B", "violin": "motif", "piano": "alberti",     "develop": ["ornament"] },
+    { "section": "climax",  "bars": 4, "material": "A", "violin": "motif", "piano": "arpeggio-up", "develop": ["octave+1"] },
+    { "section": "coda",    "bars": 4, "material": "End", "violin": "rest", "piano": "sustain-pad", "develop": [] }
+  ]
+}
